@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Space+Grotesk:wght@300..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--TemaPrincipal);
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --TemaPrincipal: rgba(210, 233, 236, 0.686);
+    --navbar: rgba(202, 211, 216, 0.284);
+    --Letras: rgb(19, 18, 18);
+    --LetrasBrancas: rgb(255, 255, 255);
+}
+header{
+    background: var(---header);
+    padding: 20px;
+    padding: 2vw 5vw;
+}
+header .TimeZone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.TimeZone p{
+    font-size: 12px;
+}
+.horaCerta{
+    padding: 5px 7px;
+    font-style: bold;
+    border-radius: 10px;
+    color: var(--LetrasBrancas);
+}
+
+/*NAVBAR ESTILIZAR*/
+
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 0.5vw 5vw;
+    z-index: 1000;
+}
+.nav-container img{
+    width: 60px;
+}
+#menu {
+    display: flex;
+    padding-right: 20px;
+}
+#menu li {
+    list-style: none;
+    padding: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+#menu a{
+    text-decoration: none;
+    color: var(--Letras);
+}
+#menu a:hover{
+    padding: 7px;
+    color: rgb(147, 149, 157);
+    transition: .1s ease;
+    border-radius: 5px;
+}
+#menu-toggle{
+    display: none;
+}
+
+/*HEADING START*/
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(20, 20, 26, 0.767), rgb(23, 23, 44)), url('img/IgrejaMembers.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 100px;
+    height: 100vh;
+    padding-bottom: 40px;
+}
+.TextoCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    height: 70vh;
+}
+.TextoCenter .CenterText{
+    font-size: 40px;
+    color: var(--LetrasBrancas);
+    /*box-shadow: 1px 1px 5px 1px rgba(65, 65, 116, 0.318);*/
+    text-transform: uppercase;
+}
+.TextoCenter .CenterParagra{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.BotaoTapes{
+    margin-top: 10px;
+}
+.BtnPlay{
+    padding: 8px 7px;
+    border-radius: 6px;
+    background: transparent;
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(232, 235, 237);
+    transition: .5s;
+    border: 2px solid var(--TemaPrincipal);
+}
+.BtnPlay:hover{
+    background: rgba(242, 241, 241, 0.197);
+    color: rgb(239, 237, 237);
+}
+
+/*SECTION_ONE*/
+
+.section_1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 3vw 5vw;
+}
+.CitacoesTitulo{
+    display: flex;
+    justify-content: center;
+}
+.Texto_Section h2{
+    padding-top: 10px;
+    font-size: 15px;
+    
+}
+#CitacaoDoDia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    background: var(--navbar);
+    color: rgb(37, 39, 40);
+    font-weight: 400;
+    padding: 30px;
+    font-size: 14px;
+    max-width: 700px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    
+}
+.section_3{
+    display: flex;
+    justify-content: center;
+    padding: 2vw 5vw;
+    background: rgb(249, 250, 249);
+    
+}
+.cards-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.card_1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 20px; 
+}
+
+.card_1 .Card_Titulo{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.card_1 .card_texto{
+    margin-top: 10px;
+    font-size: 14px;
+}
+#imgCard {
+    width: 270px;
+    border-radius: 8px;
+    transition: .5s;
+    
+}
+#imgCard:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.btnPastor{
+    margin-top: 15px;
+}
+.btnVerMais{
+    padding: 8px 7px;
+    border-radius: 6px;
+    background: transparent;
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(46, 43, 43);
+    transition: .5s;
+    border: 2px solid var(--TemaPrincipal);
+}
+.btnVerMais:hover{
+    background: var(--TemaPrincipal);
+    color: black;
+}
+.section_Church{
+    padding: 2vw 5vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.container_Church{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textChurch{
+    margin-right: 0;
+    font-size: 13px;
+    padding: 20px;
+}
+.img img{
+    width: 450px;
+    border-radius: 10px;
+    opacity: 90%;
+    margin-left: 0;
+}
+.TituloSobre{
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:400px){
+    
+    #menu-toggle {
+        display: block;
+        font-size: 22px;
+    }
+    #menu-togle {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+    }
+    #menuIcon{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+    #menuIcon::after, #menuIcon::before {
+        content: '';
+        display: block;
+        background: currentColor;
+        height: 2px;
+        width: 20px;
+        margin-top: 5px;
+        transition: .4s;
+        position: relative;
+    }
+    #nav.active #menuIcon{
+        border-top-color: transparent;
+    }
+    #nav.active #menuIcon::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #menuIcon::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        height: 0px;
+        transition: .6s;
+        background: white;
+        z-index: 10000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 5px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        font-size: 12px;
+    }
+    .TextoCenter .CenterText{
+        text-align: center;
+        font-size: 30px;
+        color: var(--LetrasBrancas);
+        /*box-shadow: 1px 1px 5px 1px rgba(65, 65, 116, 0.318);*/
+        text-transform: uppercase;
+    }
+    .TextoCenter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 8px;
+        width: 100%;
+        margin-top: 100px;
+        height: 70vh;
+    }
+    #CitacaoDoDia{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 50px;
+    }
+    #CitacaoDoDia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+        background: var(--navbar);
+        color: rgb(37, 39, 40);
+        font-weight: 400;
+        font-size: 13px;
+        max-width: 270px;
+        border-radius: 7px;
+    }
+    .card_1{
+        justify-content: center;
+    }
+   
+    .section_3 .cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card_1 .card_texto{
+        text-align: center;
+    }
+    .section_Church{
+        padding: 2vw 5vw;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content:space-between ;
+        
+    }
+    .container_Church{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textChurch{
+       padding-top: 30px;
+       padding-bottom: 30px;
+       font-size: 14px;
+       text-align: center;
+       margin-right: 0;
+    }
+    .img img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        border-radius: 10px;
+        margin-left: 0;
+        padding-bottom: 30px;
+       
+    }
+
+}
