@@ -416,11 +416,18 @@ nav{
        text-align: center;
        margin-right: 0;
     }
+    .TituloSobre{
+        margin-bottom: 10px;
+        font-size: 11px;
+    }
+    .SobreTexto{
+        font-size: 13px;
+    }
     .img img{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 300px;
+        width: 250px;
         border-radius: 10px;
         margin-left: 0;
         padding-bottom: 30px;
