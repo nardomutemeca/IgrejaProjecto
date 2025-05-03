@@ -66,9 +66,9 @@ ScrollReveal().reveal('.TextoCenter', {
 
 //ScrollReveal_2
 
-/*const ScrollLeft = {
+const ScrollLeft = {
     distance: '50px',
-    origin: 'left',
+    origin: 'bottom',
     delay: 1000,
     
 };
@@ -79,7 +79,7 @@ ScrollReveal().reveal('.section_1', {
 
 const ScrollRight = {
     distance: '50px',
-    origin: 'right',
+    origin: 'top',
     delay: 1500,
     
 };
@@ -88,5 +88,5 @@ ScrollReveal().reveal('.card_1', {
     ...ScrollRight,
 });
 
-*/
+
 
