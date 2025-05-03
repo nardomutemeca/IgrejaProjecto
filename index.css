@@ -171,7 +171,7 @@ nav{
 .section_3{
     display: flex;
     justify-content: center;
-    padding: 2vw 5vw;
+    padding: 0vw 5vw;
     background: rgb(249, 250, 249);
     
 }
@@ -185,7 +185,10 @@ nav{
     display: flex;
     flex-wrap: wrap;
     margin: 5px;
-    padding: 20px; 
+    border: 1px solid var(--TemaPrincipal);
+    box-shadow: 2px 2px 3px 2px rgba(228, 229, 233, 0.281);
+    padding: 30px;
+   
 }
 
 .card_1 .Card_Titulo{
@@ -193,10 +196,15 @@ nav{
     font-size: 15px;
 }
 .card_1 .card_texto{
+    text-align: center;
     margin-top: 10px;
     font-size: 14px;
 }
-#imgCard {
+.imgCard {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     border-radius: 8px;
     transition: .5s;
@@ -208,6 +216,8 @@ nav{
 }
 .btnPastor{
     margin-top: 15px;
+    display: flex;
+
 }
 .btnVerMais{
     padding: 8px 7px;
@@ -218,6 +228,7 @@ nav{
     color: rgb(46, 43, 43);
     transition: .5s;
     border: 2px solid var(--TemaPrincipal);
+    
 }
 .btnVerMais:hover{
     background: var(--TemaPrincipal);
