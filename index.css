@@ -376,6 +376,18 @@ nav{
     .card_1{
         justify-content: center;
     }
+    .card_1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 6px;
+        margin: 5px;
+        border: 1px solid var(--TemaPrincipal);
+        box-shadow: 2px 2px 3px 2px rgba(228, 229, 233, 0.281);
+        padding: 20px; 
+        cursor: pointer;
+        transition: .7s;
+    }
    
     .section_3 .cards-container{
         display: flex;
