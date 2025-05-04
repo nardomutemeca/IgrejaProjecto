@@ -273,8 +273,71 @@ nav{
 .SobreTexto{
     font-size: 14px;
 }
+.another_Section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(10, 10, 33, 0.737), rgb(9, 10, 37)), url(./img/Eagle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+}
+.TextoCenter2{
+    color: white;
+    text-align: center;
+}
+.textTesmenunhos{
+    font-size: 35px;
+}
+.TestParagrafo{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.SPACEBTN{
+    margin-top: 15px;
+}
+footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: row wrap;
+    padding: 30px;
+    color: #e5e5e6;
+    background: linear-gradient(rgb(10, 10, 33), rgb(4, 5, 33)) ;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.footer-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+footer li{
+    line-height: 2em;
+    list-style: none;
+}
 
-@media screen and (max-width:400px){
+ .Box{
+    font-size: 14px;
+ }
+ .Localizacao{
+    font-size: 15px;
+ }
+.RodapeLine{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+    /*background: linear-gradient(rgb(4, 4, 26), rgb(2, 3, 34)) ;*/
+    background: linear-gradient(rgb(5, 3, 33));
+    color: white;
+    padding-bottom: 20px;
+}
+@media screen and (max-width:600px){
     
     #menu-toggle {
         display: block;
@@ -441,6 +504,63 @@ nav{
         margin-left: 0;
         padding-bottom: 30px;
        
+    }
+    .another_Section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(10, 10, 33, 0.737), rgb(9, 10, 37)), url(./img/Eagle.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30vh;
+
+    }
+    .TextoCenter2{
+        color: white;
+        text-align: center;
+    }
+    .textTesmenunhos{
+        font-size: 30px;
+    }
+    .TestParagrafo{
+        font-size: 10px;
+    }
+    footer{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: row wrap;
+        padding: 30px;
+        color: #e5e5e6;
+        /*background: linear-gradient(rgb(10, 10, 33), rgb(4, 5, 33)) ;*/
+        
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-left{
+        margin-right: 1.25em;
+        margin-bottom: 2em;
+    }
+    footer li{
+        line-height: 2em;
+        list-style: none;
+    }
+    
+     .Box{
+        font-size: 14px;
+     }
+     .Localizacao{
+        font-size: 15px;
+     }
+    .RodapeLine{
+        padding-top: 30px;
+        font-size: 11px;
     }
 
 }
