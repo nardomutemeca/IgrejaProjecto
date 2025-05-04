@@ -324,6 +324,7 @@ footer li{
 
  .Box{
     font-size: 14px;
+    color: var(--TemaPrincipal);
  }
  .Localizacao{
     font-size: 15px;
@@ -334,11 +335,11 @@ footer li{
     font-size: 12px;
     /*background: linear-gradient(rgb(4, 4, 26), rgb(2, 3, 34)) ;*/
     background: linear-gradient(rgb(5, 3, 33));
-    color: white;
+    color: var(--TemaPrincipal);
     padding-bottom: 20px;
 }
-@media screen and (max-width:600px){
-    
+@media screen and (max-width:1200px){
+
     #menu-toggle {
         display: block;
         font-size: 22px;
@@ -534,7 +535,6 @@ footer li{
         display: flex;
         flex-wrap: row wrap;
         padding: 30px;
-        color: #e5e5e6;
         /*background: linear-gradient(rgb(10, 10, 33), rgb(4, 5, 33)) ;*/
         
     }
@@ -553,14 +553,17 @@ footer li{
     }
     
      .Box{
-        font-size: 14px;
+        font-size: 12px;
+        color: var(--TemaPrincipal);
      }
      .Localizacao{
+        
         font-size: 15px;
      }
     .RodapeLine{
         padding-top: 30px;
         font-size: 11px;
+        color: var(--TemaPrincipal);
     }
 
 }
