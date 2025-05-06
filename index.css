@@ -23,26 +23,6 @@ body{
     --Letras: rgb(19, 18, 18);
     --LetrasBrancas: rgb(255, 255, 255);
 }
-header{
-    background: var(---header);
-    padding: 20px;
-    padding: 2vw 5vw;
-}
-header .TimeZone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-.TimeZone p{
-    font-size: 12px;
-}
-.horaCerta{
-    padding: 5px 7px;
-    font-style: bold;
-    border-radius: 10px;
-    color: var(--LetrasBrancas);
-}
 
 /*NAVBAR ESTILIZAR*/
 
@@ -165,10 +145,11 @@ nav{
     font-weight: 400;
     padding: 30px;
     font-size: 14px;
-    max-width: 700px;
+    max-width: 550px;
+    min-width: 550px;
+    height: 30vh;
     border-radius: 7px;
     margin-bottom: 10px;
-    
 }
 .section_3{
     display: flex;
@@ -400,6 +381,9 @@ footer li{
         margin: 0 1rem;
         font-size: 12px;
     }
+    .heading{
+        height: 60vh;
+    }
     .TextoCenter .CenterText{
         text-align: center;
         font-size: 30px;
@@ -433,9 +417,13 @@ footer li{
         background: var(--navbar);
         color: rgb(37, 39, 40);
         font-weight: 400;
-        font-size: 13px;
-        max-width: 270px;
+        padding: 35px;
+        font-size: 14px;
+        max-width: 310px;
+        min-width: 310px;
+        height: 30vh;
         border-radius: 7px;
+        margin-bottom: 10px;
     }
     .card_1{
         justify-content: center;
@@ -515,7 +503,6 @@ footer li{
         background-repeat: no-repeat;
         background-position: center;
         height: 30vh;
-
     }
     .TextoCenter2{
         color: white;
@@ -557,11 +544,10 @@ footer li{
         color: var(--TemaPrincipal);
      }
      .Localizacao{
-        
         font-size: 15px;
      }
     .RodapeLine{
-        padding-top: 30px;
+        padding-top: 10px;
         font-size: 11px;
         color: var(--TemaPrincipal);
     }
