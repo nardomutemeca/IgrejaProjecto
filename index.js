@@ -1,5 +1,4 @@
 //BtnMenu
-
 const ClickarBtn = document.getElementById('menu-toggle');
 const removerDepoisdeClicar = document.querySelectorAll('a');
 
